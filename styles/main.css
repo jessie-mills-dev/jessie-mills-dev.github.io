@@ -1,3 +1,76 @@
-body {
-  background-color: aliceblue;
+
+  body {
+    background-color: rgb(212, 227, 246);
+    margin: 3em 5em 3em 5em;
+    font-family: 'Exo', sans-serif;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+  }
+
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.row-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.row-3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+
+.column-1 {
+  background-color: rgb(255, 255, 255);
+  height: fit-content;
+}
+
+.column-2 {
+  background-color: rgb(255, 255, 255);
+  height:fit-content;
+}
+.column-3 {
+  background-color: rgb(255, 255, 255);
+  height:fit-content;
+}
+.column-4 {
+  background-color: rgb(255, 255, 255);
+  height:fit-content;
+}
+.column-5 {
+  background-color: rgb(255, 255, 255);
+  height:fit-content;
+}
+.column-6 {
+  background-color: rgb(255, 255, 255);
+  height:fit-content;
+}
+
+.all-columns {
+  padding: 2em;
+  margin:1em;
+  border-radius: 2em;
+  border-color: lightgray;
+  border-style: solid;
 }
