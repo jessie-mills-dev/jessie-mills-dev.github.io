@@ -1,11 +1,7 @@
 
-/* On screens that are 480px wide or less, change background colour to pink and change navbar to simple*/
 
-body {
- background-color:lightgoldenrodyellow;;
-}
-
-@media screen and (max-width:900px) {
+/* mobile */
+@media screen and (max-width:320px) {
   body {
     background-color: #eaddec;
   }
@@ -14,13 +10,18 @@ body {
   }
 }
 
-@media screen and (min-width: 901px) {
+/* tablet */
+@media screen and (min-width: 321px) {
+  body {
+    background-color:lightgoldenrodyellow;
+   }
   #mobile {
     display:none;
   }
 }
 
-@media screen and (min-width: 1024px) {
+/* desktop */
+@media screen and (min-width: 1200px) {
   body {
     background-color: #d6f0df;
   }
