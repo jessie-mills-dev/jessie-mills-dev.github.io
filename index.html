@@ -1,114 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Exo:wght@800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Exo:wght@400&display=swap" rel="stylesheet">
-    <title>Pouty pets</title>
-  <!-- favicon -->
-    <link rel="icon" href="./Images/poutypetslogo1.png" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <script  src="main.js" type="text/javascript"></script>
+    <!-- favicon -->
+    <link rel="icon" href="Images/pawprint.png" type="image/icon type">
+    <title>Home page</title>
     </head>
+    
+    <body>
+      <div id="navbar">
+        <a style="padding:6px 5px 5px 10px; width: 3em;"  href="index.html">
+        <img src="Images/pawprint.png" width="100%" display="none">
+        </a>
+        <a class="links" href="blog/tech-blogs.html">TECH</a>
+        <a class="links" href="blog/core-blogs.html">CORE</a>
+        <a class="links" href="blog/about-me.html">ABOUT</a>
+        <a class="links" href="Pets/pets.html">PETS</a>
+    </div>
 
-<div class="logo">
-  <img src="./Images/poutypetslogo1.png" alt="Pouty Pets logo" width="128" height="128">
-</div>
-
-<!--Start navbar -->
-<div class="navbar">
-  <ul>
-<li><a class="happy" href="#happy">Happy Pets</a></li>
-<li><a class="sad" href="#sad">Sad Pets</a></li>
-<li><a class="angry" href="#angry">Angry Pets</a></li>
-<li><a class="cuddly" href="#cuddly">Cuddly Pets</a></li>
-<li><a class="hoomans" href="#hoomans">The Hoomans</a></li>
-<li><a class="Blog" href="blog/te-houtaewa-template.html">Blog</a></li>
-</ul>
-</div>
-<!--End navbar -->
-
-<!--Start mobile navbar -->
-  <body>
-    <button id="mobile">
-      <nav id="mobile-menu">
-        <h2>Menu</h2>
-        <li><a class="happy" href="#happy">Happy Pets</a></li>
-        <li><a class="sad" href="#sad">Sad Pets</a></li>
-        <li><a class="angry" href="#angry">Angry Pets</a></li>
-        <li><a class="cuddly" href="#cuddly">Cuddly Pets</a></li>
-        <li><a class="hoomans" href="#hoomans">The Hoomans</a></li>
-        <li><a class="Blog" href="blog/te-houtaewa-template.html">Blog</a></li>
-      </nav>
-    </button>
-
-    <!--End mobile navbar -->
-    <div class="intro">
-    <h1 class="intro">Welcome to Pouty pets!</h1> 
-    <p> Here you can find a collection of Christchurch's most handsome animals, with all moods on display.</p>
-    <p> Featured are the three cats, Harry, Esme and Theo, and two bunnies, Penelope and Peter. </p>
-  </div>
-  <div class="bio">
-    <div class="bioimg"><img src="./Images/harrysleep.jpg" alt="Sleeping Harry" width="250" height="250"></div>
-    <h1>Harry</h1>
-    <p class="align-right">My name is Harry! I was adopted from <a href="https://www.spca.nz/centre/wellington-centre">SPCA Wellington.</a> My favourite things are:
-      <ul>
-        <li>Staring at mum and dad's dinner</li>
-        <li>Making friends with strangers</li>
-        <li>Pretending I'm a playful kitten</li>
-      </ul>
-    </p>
-  </div>
-  <br><br>
-  <div class="bio">
-    <div class="bioimg"><img src="./Images/esmecozy.jpg" alt="Cozy Esme" height="250"></div>
-    <h1>Esme</h1>
-    <p class="align-right">My name is Esme! I was adopted from <a href="https://huha.org.nz/">HUHA Animal Rescue.</a> My favourite things are:
-      <ul>
-        <li>Looking beautiful</li>
-        <li>Exploring outside</li>
-        <li>Hissing at the boys</li>
-      </ul></p>
-  </div>
-  <br><br>
-  <div class="bio">
-    <div class="bioimg"><img src="./Images/theochonk.jpg" alt="Theo Chonk" width="250" height="250"></div>
-    <h1>Theo</h1>
-    <p class="align-right">My name is Theo! I was adopted from <a href="https://www.spca.nz/centre/palmerston-north-centre">SPCA Palmerston North.</a> My favourite things are:
-      <ul>
-        <li>Cuddles</li>
-        <li>Attention</li>
-        <li>Being a little baby</li>
-      </ul></p>
-      
-  </div>
-<br><br>
-  <div class="bio">
-    <div class="bioimg"><img src="./Images/pennyhi.jpg" alt="Penelope" width="250" height="250"></div>
-    <h1>Penelope</h1>
-    <p class="align-right">My name is Penelope! I was adopted from <a href="https://www.crr.org.nz/">Christchurch Rabbit Rescue.</a> My favourite things are:
-      <ul>
-        <li>Chin scratches</li>
-        <li>Banana</li>
-        <li>My hubbun Peter</li>
-      </ul></p>
-      
-  </div>
-  <br><br>
-  <div class="bio">
-    <div class="bioimg"><img src="./Images/peterhi.jpg" alt="Peter" width="250" height="250"></div>
-    <h1>Peter</h1>
-    <p class="align-right">My name is Peter! I was adopted from <a href="https://www.crr.org.nz/">Christchurch Rabbit Rescue.</a> My favourite things are:
-      <ul>
-        <li>Stoicism</li>
-        <li>Zoomies when I think no one is looking</li>
-        <li>Penelope my wifeybun</li>
-      </ul></p>
-      
-  </div>
-  <br><br>
-  </body>
+    <div id="page">
+      <div id="sideBar">
+        <div>
+          <img class="selfie" src="Images/selfie.jpg">
+          </div>
+          <div>
+            <p>Kia ora, I'm Jessie! I'm excited to be part of the Aihe intake for Dev Academy in 2022.</p>
+            <p> I'm based in Christchurch and live with three cats, two bunnies and one husband!</p> 
+            <p>You can read more about me and my learning journey in my blog posts and the About page. </p>
+          </div>
+        </div>
+          <div class = "first-flex">
+            <section> 
+              <div class="intro">
+              <h1>Recent Blog Posts</h1>
+              </div>
+              <div class="blog-preview">
+                <h2><a href="blog/problem-solving.html">Problem-solving</a> </h2>  
+                <p>
+                  <div>
+                  <p>Problem-solving is a skill that is required for everyone throughout life, at all ages and stages. Little babies have to problem solve how to get their parent's attention and toddlers learn how to navigate around obstacles when learning to walk. Children have to problem-solve to learn their times tables - and students learning JavaScript are no exception!</p>
+          
+                  <p>Adapting your problem-solving techniques based on the problem you are facing is key. You can't apply the same problem-solving steps you used for replacing a damaged curtain rail to dealing with some confusing code.</p>
+          
+                  <p>So! Let's look back at some problems from the past week I had when learning JavaScript. We'll start with the hardest one - something I was really stuck on.
+                  </p>
+                  <h3>Feeling Blocked</h3>
+                  <p>One of the challenges this week was the <span class="code">capitalize</span> one. This used the <span class="code">.map()</span> built-in method to change every word in a sentence to have a capital letter. Sounds easy in theory, right?</p>
+                  <p>I <i>struggled.</i></p> 
+                  <p class="bigger">The syntax...</p> 
+                  <p class ="biggerer">The order...</p> 
+                  <p class ="biggest">The methods...</p>  
+                  <hr>
+                  <p><a href="blog/problem-solving.html">Read the full blog post here.</a></p>
+                </p>
+              </div>
+            </section>
+  
+            <section>
+              <div class="blog-preview">
+                <h2> <a href="blog/neuroplasticity.html">Why is it important to understand neuroplasticity?</a></h2>  
+                <p>A big benefit of understanding neuroplasticity is gaining the knowledge that <em>repetition and exposure to a concept</em> that makes a person learn something - not an innate, fixed level of intelligence.</p> 
+                <p>This gives hope that you can become competent (or even great!) at something - but that it’s normal to not understand it at the beginning.</p>
+                <p>For a long time I’ve had an issue with the phrase “you’re so talented” - I think it’s detrimental. While we have a degree of built-in dispositions and interests, people who excel in areas almost exclusively got there through repetition and hard work, not an accidental “wow I’m great at this” discovery. Dismissing years of dedication as an innate talent does the person who put in all that work a disservice and downplays all the work taken to get there.</p>
+                <p>In saying that, it is almost always said as a compliment, not insult… but it’s something that makes me twitch!</p></p>
+                <h3>How can neuroplasticity help you - and how can you build it?</h3>
+                <p>On a personal level, I would like to spend more time going back over things I learned in previous weeks, or at least taking part in challenges that use this information. I find it’s hard to make things “stick” sometimes. If I think about those little information highways that need strengthening, it helps motivate me to do so.</p>
+                <p>In general, to improve your neuroplasticity, there are some tried and true steps:</p>
+                  <ul>
+                    <li>Choose to learn a new skill - something you’re not already good at.</li>
+                      <p> → It should be something you’re motivated to learn (I am very unmotivated to learn how to play Rugby, for example, so I wouldn’t do that). </p>
+                    <li>Make a plan to learn about the skill regularly, and repeat this learning over a period of time.</li> 
+                  </ul>
+                <p> Over time your brain will change to develop and strengthen pathways built from learning this skill. Our current learning is a good example of this, as is learning a language, starting an exercise program or a hobby.</p>
+                 <hr>
+                <p><a href="blog/neuroplasticity.html">Read the full blog post here.</a></p>
+              </div>
+            </section>
+          </div> 
+    </div>
+  </body>  
+  
 </html>

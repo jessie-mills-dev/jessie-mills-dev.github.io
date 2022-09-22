@@ -1,66 +1,88 @@
-<!doctype html>
-<html>
+
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles/blogstyles.css" type="text/css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../styles/styles.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<script  src="main.js" type="text/javascript"></script>
+<!-- favicon -->
+<link rel="icon" href="../Images/pawprint.png" type="image/icon type">
 <title>Relative, absolute and fixed positioning</title>
 </head>
+
 <body>
-<h1>What are the differences between relative, absolute, and fixed positioning?</h1>
+  <div id="navbar">
+    <a style="padding:6px 5px 5px 10px; width: 3em;"  href="../index.html">
+    <img src="../Images/pawprint.png" width="100%" display="none">
+    </a>
+    <a class="links" href="tech-blogs.html">TECH</a>
+    <a class="links" href="core-blogs.html">CORE</a>
+    <a class="links" href="about-me.html">ABOUT</a>
+    <a class="links" href="../Pets/pets.html">PETS</a>
+  </div>
 
-<div id="main-text">
-<p>
-  There are different ways to position elements on a page, and a common way to do this is by using the aptly named <span class="code">position</span> property.
-
-  This specifies how the element behaves, and the values associated with it set rules as to how the element can move.
-</p>
-<h2>Position values</h2>
-<p> While we are mostly focusing on just three of these, there are actually five values that can be used with the position property. These are:
-  <ul>
-    <li><span class="code">static</span></li>
-    <li><span class="code">relative</span></li>
-    <li><span class="code">fixed</span></li>
-    <li><span class="code">absolute</span></li>
-    <li><span class="code">sticky</span></li>
-  </ul>
-</p>
-
-  <div>
-    <h3>Relative</h3>
-    <p>
-      <span class="code">relative</span> is when the element is positioned relative to it's original position on the page. If it has positional changes, like being told to move left, that direction is relative to it's original, static position. Relative positioning also allows you to use a z-index on the element, which you can't do with static positioning.
-    </p>
+  <div id="page">
+    <div id="sideBar">
+      <div>
+        <img class="selfie" src="../Images/selfie.jpg">
+      </div>
+      <div>
+        <p>Kia ora, I'm Jessie! I'm excited to be part of the Aihe intake for Dev Academy in 2022.</p>
+        <p> I'm based in Christchurch and live with three cats, two bunnies and one husband!</p> 
+        <p>You can read more about me and my learning journey in my blog posts and the About page. </p>
+      </div>
+    </div>
+    <div class = "first-flex">
+      <section> 
+          <div class="intro">
+            <h1>What are the differences between relative, absolute, and fixed positioning?</h1>
+          </div>
+          <div class="blog-preview">
+            <p>
+              There are different ways to position elements on a page, and a common way to do this is by using the aptly named <span class="code">position</span> property.
+            
+              This specifies how the element behaves, and the values associated with it set rules as to how the element can move.
+            </p>
+            <h2>Position values</h2>
+              <p>While we are mostly focusing on just three of these, there are actually five values that can be used with the position property. These are:
+              <ul>
+                <li><span class="code">static</span></li>
+                <li><span class="code">relative</span></li>
+                <li><span class="code">fixed</span></li>
+                <li><span class="code">absolute</span></li>
+                <li><span class="code">sticky</span></li>
+              </ul>
+              </p>
+            <h3>Relative</h3>
+              <p><span class="code">relative</span> is when the element is positioned relative to it's original position on the page. If it has positional changes, like being told to move left, that direction is relative to it's original, static position. Relative positioning also allows you to use a z-index on the element, which you can't do with static positioning.
+              </p>
+            <h3>Absolute</h3>
+              <p><span class="code">abolute</span> positioning allows you to choose exactly where you want the element - so it can be very powerful. This is usually added to a child element where the parent element was relative. The relative parent element then gives context as to where the child is being positioned from and gives limitations based on the parent elements placing and size.</p>
+              <p>An absolute property doesn't have to be tied to a parent element, however. If it doesn't have one, it will instead will default to the <span class="code"></span>html</span> element for positioning. Absolute positioning can be really useful, however it can limit your site's flexibility if it's overused.
+              </p>
+            <h3>Fixed</h3>
+              <p><span class="code">fixed</span> positioning is great for things like navigation bars. It allows an element to stay visible on the page the whole time, as it will move with the viewport. This can cause issues with overlapping content though, so this needs to be used carefully.
+              </p>
+            <h3>
+              If you're interested in learning more about <span class="code">position</span> and the different values check out <a href="https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/">this great article</a> by CSS-Tricks.com.
+            </h3>
+          </div>
+        </div>
+      </section>
+    </div> 
   </div>
-  <div>
-    <h3>Absolute</h3>
-    <p>
-      <span class="code">abolute</span> positioning allows you to choose exactly where you want the element - so it can be very powerful. This is usually added to a child element where the parent element was relative. The relative parent element then gives context as to where the child is being positioned from and gives limitations based on the parent elements placing and size. 
-      
-      An absolute property doesn't have to be tied to a parent element, however. If it doesn't have one, it will instead will default to the <span class="code"></span>html</span> element for positioning. Absolute positioning can be really useful, however it can limit your site's flexibility if it's overused.
-    </p>
-  </div>
-  <div>
-    <h3>Fixed</h3>
-    <p>
-      <span class="code">fixed</span> positioning is great for things like navigation bars. It allows an element to stay visible on the page the whole time, as it will move with the viewport. This can cause issues with overlapping content though, so this needs to be used carefully.
-    </p>
-  </div>
-  <div>
-    <h3>
-      If you're interested in learning more about <span class="code">position</span> and the different values check out <a href="https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/">this great article</a> by CSS-Tricks.com.
-    </h3>
-  </div>
-  <div>
-    <a class="back" href="../blog/te-houtaewa-template.html">Back to Blog</a>
-  </div>
- <br>
-<div>
-  <a class="back" href="../index.html">Home</a>
-</div>
-  <div>
-
-</div>
-</div>
-</div>
-</body>
+</body>  
 </html>
+
+
+        
+
+
+
+
+

@@ -1,140 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="../styles/blogstyles.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400&display=swap" rel="stylesheet">
-        <title>HTML Template</title>
-    </head>
-    <body>
-      
-        <h1>Problem-solving</h1>
-        <div id="main-text">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../styles/styles.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<script  src="main.js" type="text/javascript"></script>
+<!-- favicon -->
+<link rel="icon" href="../Images/pawprint.png" type="image/icon type">
+<title>Problem Solving</title>
+</head>
 
-        <p>Problem-solving is a skill that is required for everyone throughout life, at all ages and stages. Little babies have to problem solve how to get their parent's attention and toddlers learn how to navigate around obstacles when learning to walk. Children have to problem-solve to learn their times tables - and students learning JavaScript are no exception!</p>
+<body>
+  <div id="navbar">
+    <a style="padding:6px 5px 5px 10px; width: 3em;"  href="../index.html">
+    <img src="../Images/pawprint.png" width="100%" display="none">
+    </a>
+    <a class="links" href="tech-blogs.html">TECH</a>
+    <a class="links" href="core-blogs.html">CORE</a>
+    <a class="links" href="about-me.html">ABOUT</a>
+    <a class="links" href="../Pets/pets.html">PETS</a>
+  </div>
 
-        <p>Adapting your problem-solving techniques based on the problem you are facing is key. You can't apply the same problem-solving steps you used for replacing a damaged curtain rail to dealing with some confusing code.</p>
-
-        <p>So! Let's look back at some problems from the past week I had when learning JavaScript. We'll start with the hardest one - something I was really stuck on.
-        </p>
-<hr>
-        <h2>Feeling Blocked</h2>
-
-        <p>One of the challenges this week was the <span class="code">capitalize</span> one. This used the <span class="code">.map()</span> built-in method to change every word in a sentence to have a capital letter. Sounds easy in theory, right?</p>
-
-        <p>I <i>struggled.</i></p> 
-        <p class="bigger">The syntax...</p> 
-        <p class ="biggerer">The order...</p> 
-        <p class ="biggest">The methods...</p>  
-        <img src="../Images/panic.png" alt="panic meme" width = "400">
-
-        <p> I googled, again and again and again. I tried to implement what I googled. I tested simpler versions of what I was trying to do. I took a break.</p>
-        <p>I wrote pseudocode. I spoke the code I was writing aloud. I watched youtube videos on the .map function. I googled some more. I tried some more variations.</p> 
-        <p>I took another break. I reached out for support on discord. I got more confused. I joined a zoom and went over it, but when applying it to my own code I still couldn't get it working.</p>
-        <p>Eventually Gerard helped me piece it together. <span class="red">About four hours after starting the question.</span></p>
-        <p>It was a bit of a nightmare.</p>
-        <h3>How did I feel?</h3>
-        <p>I felt stressed, but not actually as panicked as the above meme implies. I think because I wasn't completely panicking, I didn't try harder to get help from a facilitor, or reach out sooner, because I hadn't hit that low yet.</p>
-        <p>In hindsight, I'm probably just learning to be a bit more patient with myself - which is good, but this led to me waiting far too long before admitting I was going nowhere.</p>
-
-        <h3>What did I learn?</h3>
-        <p>From this process, I learnt that I really need to stop and ask for help earlier. If I'm still not understanding, say that explicitly and try jump into a zoom instead, rather than half-getting it and spending another 2 hours down a rabbit hole.</p>
-<hr>
-        <h2>Try, try again</h2>
-        <p>The next problem was the <span class="code">whereAreYou</span> one. We had to use the <span class="code">.find()</span> method to return the object that "Scooby" was hiding in.</p>
-        <p>For a while, I was just as stuck as the first time. However, when Gerard helped me earlier <a href="https://gerardpaapu.com/wormwood/unwoof.html">he provided the unwoof challenge</a> for me to try.</p>
-        <p>Reflecting on this made me pause - and realise I needed to call a function within the function in order to get what I needed. So I started experimenting with that.</p>
-        <p>I wrote some pseudocode to mentally plan out what I needed to do. I copied the instructions and the hints into the main view, so it was all in front of me.</p>
-        <p>I googled, then googled some more, and then some more.</p>
-        <p>Eventually, I tried one more thing, and I saw that beautiful response, <span class ="code">pass</span>.</p>
-        <p>I did it, and it didn't take four hours, or even one. I was relieved. I then applied the same information I had learnt to the last challenge, and got that in about 10 minutes - I was thrilled!</p>
-        <h3>How did I feel?</h3>
-        <p>Mostly, relief. I was worried that I was going to be just as lost as the previous one, but it was a big sense of accomplishment that I could problem-solve my way through. And, that while it sometimes feels like nothing sticks, something must have for me to be able to get through that problem!</p>
-        <h3>What did I learn?</h3>
-        <p>I learned that before diving right into a problem, I need to stop, think and assess. I think forcing myself to write pseudocode is key here - rather than diving in and making a big old mess, I can plan it out and think.</p>
-        <p>Then, looking at that pseudocode I can reflect on whether I know enough to do what I need, or if I need to do some research first.</p>
-<hr>
-        <h2>Different Problem-solving techniques</h2>
-        <p>Here we have a full list of common problem-solving techniques, and how confident I am for each of them.</p>
-        <ul>
-          <li><u>Pseudocode</u></li>
-          <p>What is this?</p> 
-          <p>This is when you write out the steps in a non codey way. For example:<br>
-          // Get out the chocolate<br>
-          // Put the chocolate in a bowl<br>
-          // Take the chocolate out of the bowl<br>
-          // Put it in your mouth instead silly girl<br>
-        </p> <p>
-          I feel relatively comfortable with this - sometimes I struggle with knowing how it should be broken down though. Also, I sometimes skip this step when I shouldn't.
-        </p> 
-          <li><u>Trying something</u></li>
-          <p>What is this?</p>
-          <p>This is just giving some code a try, even though you don't know if you're right. Worst case scenario is you end up with some errors that you can use to narrow down the issue.</p>
-          <p>This is my main problem-solving technique so I'm very confident with this.</p>
-          <li><u>Rubber Ducky Method</u></li>
-          <p>What is this?</p>
-          <p>This is reading the code aloud to an inanimate object, a cat - whatever. It's speaking through what you're doing, to try work out where it's going wrong.</p>
-          <p>I'm pretty confident doing this, and it's a good way to reinforce what I'm actually doing in the code as well.</p>
-          <li><u>Console.logging</u></li>
-          <p>What is this?</p>
-          <p>This is using <span class="code">console.log()</span> to see what's currently being printed to the console. It allows you to see where you're going right, and wrong. You can use this to fix issues before they get buried deep in many lines of code.</p>
-          <p>I don't do this enough. I feel pretty confident doing it, but it's not a habit I'm in. I'll try include it more!</p>
-          <li><u>Googling</u></li>
-          <p>What is this?</p>
-          <p>Searching for an answer on Google! Using "JS" and keywords from the challenge to help you find an answer or guidance.</p>
-          <p>I am very confident doing this.</p>
-          <li><u>Asking your peers for help</u></li>
-          <p>What is this?</p>
-          <p>Reaching out to peers on discord, either via private message, a post in tech questions or in homegroup.</p>
-          <p>I'm comfortable doing this, however I find it can sometimes make it more confusing. In saying that I've had great help from peers, it's sometimes just getting to know who to work with. I also feel bad if I can't help them with something back!</p>
-          <li><u>Asking coaches for help</u></li>
-          <p>What is this?</p>
-          <p>Asking in tech questions and getting help from a facilitor.</p>
-          <p>I'm pretty confident doing this. I find the facilitators are really good at helping. They'll provide the answer but not in a 100% direct way, however not so obscurely that you can't understand. Once you get the answer, you don't just move on - I tend to study it and work backwards to make sure I fully understand it.</p>
-          <li><u>Improving your process with reflection</u></li>
-          <p>What is this?</p>
-          <p>Processes like this - looking back on an issue you had, how you resolved it and what you learnt.</p>
-          <p>I could do with more of this - sometimes it feels like it's a bit too much of a rush to learn the next thing so slowing down and revising would be helpful. I have a "to revise" list that I'm working through!</p>
-      </ul>
-      </div>
-
+  <div id="page">
+    <div id="sideBar">
       <div>
-        <a class="back" href="../blog/te-houtaewa-template.html">Back to Blog</a>
+        <img class="selfie" src="../Images/selfie.jpg">
       </div>
-     <br>
-    <div>
-      <a class="back" href="../index.html">Home</a>
+      <div>
+        <p>Kia ora, I'm Jessie! I'm excited to be part of the Aihe intake for Dev Academy in 2022.</p>
+        <p> I'm based in Christchurch and live with three cats, two bunnies and one husband!</p> 
+        <p>You can read more about me and my learning journey in my blog posts and the About page. </p>
+      </div>
     </div>
-  
+    <div class = "first-flex">
+      <section> 
+        <div class="intro">
+          <h1>Problem-solving</h1>
+        </div>
+        <div class="blog-preview">
+          <p>Problem-solving is a skill that is required for everyone throughout life, at all ages and stages. Little babies have to problem solve how to get their parent's attention and toddlers learn how to navigate around obstacles when learning to walk. Children have to problem-solve to learn their times tables - and students learning JavaScript are no exception!</p>
+          <p>Adapting your problem-solving techniques based on the problem you are facing is key. You can't apply the same problem-solving steps you used for replacing a damaged curtain rail to dealing with some confusing code!</p>
+          <p>So - let's look back at some problems from the past week I had when learning JavaScript. We'll start with the hardest one - something I was really stuck on.
+          </p>
+            <hr>
 
-      </div>
-        
-    </body>
+          <h2>Feeling Blocked</h2>
+            <p>One of the challenges this week was the <span class="code">capitalize</span> one. This used the <span class="code">.map()</span> built-in method to change every word in a sentence to have a capital letter. Sounds easy in theory, right?</p>
+            <p>I <i>struggled.</i></p> 
+            <p class="bigger">The syntax...</p> 
+            <p class ="biggerer">The order...</p> 
+            <p class ="biggest">The methods...</p>  
+              <img src="../Images/panic.png" alt="panic meme" width = "400">
+            <p> I googled, again and again and again. I tried to implement what I googled. I tested simpler versions of what I was trying to do. I took a break.</p>
+            <p>I wrote pseudocode. I spoke the code I was writing aloud. I watched youtube videos on the .map function. I googled some more. I tried some more variations.</p> 
+            <p>I took another break. I reached out for support on discord. I got more confused. I joined a zoom and went over it, but when applying it to my own code I still couldn't get it working.</p>
+            <p>Eventually Gerard helped me piece it together. <span class="red">About four hours after starting the question.</span></p>
+            <p>It was a bit of a nightmare.</p>
+
+          <h3>How did I feel?</h3>
+            <p>I felt stressed, but not actually as panicked as the above meme implies. I think because I wasn't completely panicking, I didn't try harder to get help from a facilitor, or reach out sooner, because I hadn't hit that low yet.</p>
+            <p>In hindsight, I'm probably just learning to be a bit more patient with myself - which is good, but this led to me waiting far too long before admitting I was going nowhere.</p>
+
+          <h3>What did I learn?</h3>
+            <p>From this process, I learnt that I really need to stop and ask for help earlier. If I'm still not understanding, say that explicitly and try jump into a zoom instead, rather than half-getting it and spending another 2 hours down a rabbit hole.</p>
+              <hr>
+          <h2>Try, try again</h2>
+            <p>The next problem was the <span class="code">whereAreYou</span> one. We had to use the <span class="code">.find()</span> method to return the object that "Scooby" was hiding in.</p>
+            <p>For a while, I was just as stuck as the first time. However, when Gerard helped me earlier <a href="https://gerardpaapu.com/wormwood/unwoof.html">he provided the unwoof challenge</a> for me to try.</p>
+            <p>Reflecting on this made me pause - and realise I needed to call a function within the function in order to get what I needed. So I started experimenting with that.</p>
+            <p>I wrote some pseudocode to mentally plan out what I needed to do. I copied the instructions and the hints into the main view, so it was all in front of me.</p>
+            <p>I googled, then googled some more, and then some more.</p>
+            <p>Eventually, I tried one more thing, and I saw that beautiful response, <span class ="code">pass</span>.</p>
+            <p>I did it, and it didn't take four hours, or even one. I was relieved. I then applied the same information I had learnt to the last challenge, and got that in about 10 minutes - I was thrilled!</p>
+
+          <h3>How did I feel?</h3>
+            <p>Mostly, relief. I was worried that I was going to be just as lost as the previous one, but it was a big sense of accomplishment that I could problem-solve my way through. And, that while it sometimes feels like nothing sticks, something must have for me to be able to get through that problem!</p>
+
+          <h3>What did I learn?</h3>
+            <p>I learned that before diving right into a problem, I need to stop, think and assess. I think forcing myself to write pseudocode is key here - rather than diving in and making a big old mess, I can plan it out and think.</p>
+            <p>Then, looking at that pseudocode I can reflect on whether I know enough to do what I need, or if I need to do some research first.</p>
+          <hr>
+
+          <h2>Different Problem-solving techniques</h2>
+            <p>Here we have a full list of common problem-solving techniques, and how confident I am for each of them.</p>
+              <ul>
+                <li><u>Pseudocode</u></li>
+                  <p>What is this?</p> 
+                  <p>This is when you write out the steps in a non codey way. For example:<br>
+                   // Get out the chocolate<br>
+                   // Put the chocolate in a bowl<br>
+                   // Take the chocolate out of the bowl<br>
+                   // Put it in your mouth instead silly girl<br>
+                  </p> 
+                    <p>I feel relatively comfortable with this - sometimes I struggle with knowing how it should be broken down though. Also, I sometimes skip this step when I shouldn't.</p> 
+                <li><u>Trying something</u></li>
+                  <p>What is this?</p>
+                  <p>This is just giving some code a try, even though you don't know if you're right. Worst case scenario is you end up with some errors that you can use to narrow down the issue.</p>
+                  <p>This is my main problem-solving technique so I'm very confident with this.</p>
+                <li><u>Rubber Ducky Method</u></li>
+                  <p>What is this?</p>
+                  <p>This is reading the code aloud to an inanimate object, a cat - whatever. It's speaking through what you're doing, to try work out where it's going wrong.</p>
+                  <p>I'm pretty confident doing this, and it's a good way to reinforce what I'm actually doing in the code as well.</p>
+                <li><u>Console.logging</u></li>
+                  <p>What is this?</p>
+                  <p>This is using <span class="code">console.log()</span> to see what's currently being printed to the console. It allows you to see where you're going right, and wrong. You can use this to fix issues before they get buried deep in many lines of code.</p>
+                  <p>I don't do this enough. I feel pretty confident doing it, but it's not a habit I'm in. I'll try include it more!</p>
+                <li><u>Googling</u></li>
+                  <p>What is this?</p>
+                  <p>Searching for an answer on Google! Using "JS" and keywords from the challenge to help you find an answer or guidance.</p>
+                  <p>I am very confident doing this.</p>
+                <li><u>Asking your peers for help</u></li>
+                  <p>What is this?</p>
+                  <p>Reaching out to peers on discord, either via private message, a post in tech questions or in homegroup.</p>
+                  <p>I'm comfortable doing this, however I find it can sometimes make it more confusing. I also feel bad if I can't help them with something back!</p>
+                <li><u>Asking coaches for help</u></li>
+                  <p>What is this?</p>
+                  <p>Asking in tech questions and getting help from a facilitor.</p>
+                  <p>I'm pretty confident doing this. I find the facilitators are really good at helping. They'll provide the answer but not in a 100% direct way, however not so obscurely that you can't understand. Once you get the answer, you don't just move on - I tend to study it and work backwards to make sure I fully understand it.</p>
+                <li><u>Improving your process with reflection</u></li>
+                  <p>What is this?</p>
+                  <p>Processes like this - looking back on an issue you had, how you resolved it and what you learnt.</p>
+                  <p>I could do with more of this - sometimes it feels like it's a bit too much of a rush to learn the next thing so slowing down and revising would be helpful. I have a "to revise" list that I'm working through!</p>
+              </ul>
+        </div>
+      </section>
+    </div> 
+  </div>
+</body>  
 </html>
-
-<style>
-  .bigger {
-    font-size: medium;
-    font-weight:500;
-  }
-  .biggerer {
-    font-size: larger;
-    font-weight:700;
-  }
-
-  .biggest {
-    font-size:x-large;
-    font-weight:800;
-
-  }
-
-  .red {
-    color: red;
-  }
-  
-
-
-
-</style>
-

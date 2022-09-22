@@ -1,160 +1,154 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="../styles/blogstyles.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400&display=swap" rel="stylesheet">
-        
-        <title>Technical Blog - JS Fundamentals</title>
-    </head>
-    <body>
-      <h1 class="jsdom">Javascript Fundamentals</h1>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../styles/styles.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<script  src="main.js" type="text/javascript"></script>
+<!-- favicon -->
+<link rel="icon" href="../Images/pawprint.png" type="image/icon type">
+<title>Javascript Fundamentals</title>
+</head>
 
-      <div id="main-text">
-      <p>Javascript is a core part of computer programming; it gives you wide range of flexibility when creating a web page or app. With Javascript you can achieve a lot of things that are simply not possible with only HTML and CSS. </p>
-      <p>
-      In this blog we'll go over some of the key concepts of this language, how it relates to HTML/CSS and how to use the DOM.</p>
-
-      <h2>What is Javascript? How does it work with HTML and CSS?</h2>
-      <p>
-        You can compare the relationship between Javascript, CSS and HTML to a person.
-        <br><br>
-        The HTML can provide basic information about the person; their structure. Let's say that they have a head, arms, torso and legs. Technically you wouldn't see any kind of drawing here just with html - it would be all html elements, but for the anaology let's ignore that.
-
-        <br><br>
-        <img id="html-man" src="../Images/stick-figure.png" alt="HMTL man">
-        <br><br>
-        CSS then can make them a bit more interesting. CSS adds their height, width, what colour clothes they're wearing, their hair style and colour. Now we have a person ready to go - but they're not doing a whole lot. 
-        <br><br>
-        <img id="css-man" src="../Images/css-man.png" alt="CSS man">
-        <br><br>
-        JavaScript is giving the person the ability to change! This can be in so many ways, but here are a few you can try - press the buttons below to trigger an event to change our person.
-        <br><br>
-        <img id="css-man-change-me" src="../Images/css-man-change-me.png" alt="CSS man">
-  
-        <br><br>
-        <div class="buttons">
-        <button id="change-clothes" type="button">Change my clothes</button>
-        <button id="headache" type="button">Give me a headache</button>
-        <button id="make-me-hide" type="button">Make me hide</button>
-        <button id="reset-me" type="button">Reset</button>
-
-      </div>
-      </p>
-      <h2>Control flow, conditionals and loops</h2> 
-      <p>
-        Control flow is the way a document is read. The default is top to bottom, however with Javascript we can get more creative and execute different sections of our code when we want.
-
-        This is done by one of two ways:
-        <ul>
-          <li>Conditional Statments</li>
-          <ol>
-            <li>if/else</li>
-            <li>switch</li>
-            <li>ternary</li>
-          </ol>
-          <li>Loops</li>
-          <ol>
-            <li>for loops</li>
-            <li>do/while loops</li>
-            <li>... and many more!</li>
-          </ol>
-        </ul>
-        </p>
-        <p>You can compare control flow, loops and conditional statements to everyday life. For example, the default flow for your life may be:
-          <ul>
-            <li>Wake up</li>
-            <li>Eat breakfast</li>
-            <li>Get changed</li>
-            <li>Go to work</li>
-            <li>Go home</li>
-            <li>Watch Netflix</li>
-            <li>Go to bed</li>
-          </ul> 
-      
-        <p>However, those list items will not always need to be completed - and this is where if/else conditional statements and for loops comes in.</p>
-
-        <p>The condition could state that <strong>if</strong> it is a weekday, you should loop through the above activities 5 times. However <strong>if else</strong> it is a weekend, you should loop through a different group of activities 2 times:</p>
-        <ul>
-          <li>Sleep in</li>
-          <li>Go out for brunch</li>
-          <li>Catch up with friends</li>
-          <li>Go Shopping</li>
-          <li>Stay up late</li>
-        </ul> 
-
-
-        <p>Once that loop is completed, the rest of the code would continue.</p>
-
-        <p>In general, loops allow you to do repetitive tasks with less code.</p>
-
-        I want to make a quick note of the key parts of a loop:
-        <ul>
-          <li>This first part is called the <strong>Initializer</strong> - this is declaring a variable. <br>Usually it's <span class="code">i</span>, but it can be anything - for example, <span class="code">num</span> instead.<br> It can be written as <span class="code">let num = 0</span>, but the <span class="code">let</span> is usually removed and <span class="code">i</span> is used instead, so <span class="code">i = 0.</span></li><br>
-          <li>The second part is called the <strong>Condition</strong> and usually looks something like <span class="code">i > 10.</span> <br>The number to the right is the condition that needs to be met - to be recognised as true to continue running the code. <br>In this example, it's saying "keep running this loop as long as our variable is greater than 10."</li><br>
-          <li>The third part is called the <strong>Final expression</strong> - <span class="code">i++.</span> This says "after each loop, add one." This means in the next loop, the computer will no longer see <span class="code">i = 0</span> but instead <span class="code">i = 1</span>.</li>
-        </ul>
-      <p></p>   
-      Here's a <a href="https://www.youtube.com/watch?v=sJZLB0p5QQk">really good video on loops.</a>
-      </p>
-      
-      <h2>Arrays vs Objects</h2>
-      <p>Objects and Arrays are similar and often used within each other, but they are different in how they store data and how this data is accessed. Having both options and being able to use them together allows us greater flexibility when pulling and storing data.</p>
-
-        Arrays are lists within two square brackets:
-        <p class="code">let array = [orange, banana, pineapple, apple];</p>
-        
-        <p>They are accessed by calling their number, which starts from 0. For example if you wanted to access "banana" from the array above you would need to call <span class="code">array[1]</span>.</p>
-
-        Objects are also lists, but they are in pairs of keys and values rather than single comma-delimited values. They are accessed via dot notation, and use curly brackets:
-        <p class="code">let object = {<br>fruit: 'orange', <br>ripeness: 'underipe' <br>delicious: true<br>};</p>
-
-        <p>To check if the fruit was delicious, you would call <span class="code">object.delicious</span>.</p>
-
-        <h2>What is the DOM and how do you use it?</h2>
-        <p>The DOM stands for document object model and ties HTML, CSS and JavaScript together. It represents your entire document, and you can use it to make dynamic changes to the code.</p>
-
-        <p>An example of how you could use the DOM to improve your website is to change the text when an event happens. You can create a button in HTML that says "Turn me red!" that on the click, changes (via JavaScript) the page text to red.</p>
-
-        <p>Here are some common methods/ways to interface with the DOM:</p>
-        <ul class="code">
-          <li>document.querySelector(selector)</li>
-          <li>document.querySelectorAll(name)</li>
-          <li>element.innerHTML</li>
-          <li>element.style.left</li>
-          <li>element.addEventListener()</li>
-        </ul>
-
-      <h2>Functions - what are they and why do we need them?</h2>
-      <p> Functions are a really important part of JavaScript, as it stops us from writing the same code over and over. You use functions to define what should happen to the code when the function is called, and then re-use that same function later on, rather than re-writing it all.
-
-      <p>Here is a very simple version of a function. Usually there would be a lot more code in the function itself, but you can see how the rules are set in the function and then the call tells it to run. 
-        <div><img src="../Images/functionexample.png" width= 400 em;></div>
-
-
-      </p>
-
-
-      </p>
-      
-    </div>
-    <div>
-      <a class="back" href="../blog/te-houtaewa-template.html">Back to Blog</a>
-    </div>
-   <br>
-  <div>
-    <a class="back" href="../index.html">Home</a>
+<body>
+  <div id="navbar">
+    <a style="padding:6px 5px 5px 10px; width: 3em;"  href="../index.html">
+    <img src="../Images/pawprint.png" width="100%" display="none">
+    </a>
+    <a class="links" href="tech-blogs.html">TECH</a>
+    <a class="links" href="core-blogs.html">CORE</a>
+    <a class="links" href="about-me.html">ABOUT</a>
+    <a class="links" href="../Pets/pets.html">PETS</a>
   </div>
 
-      
+  <div id="page">
+    <div id="sideBar">
+      <div>
+        <img class="selfie" src="../Images/selfie.jpg">
+      </div>
+      <div>
+        <p>Kia ora, I'm Jessie! I'm excited to be part of the Aihe intake for Dev Academy in 2022.</p>
+        <p> I'm based in Christchurch and live with three cats, two bunnies and one husband!</p> 
+        <p>You can read more about me and my learning journey in my blog posts and the About page. </p>
+      </div>
+    </div>
+    <div class = "first-flex">
+      <section> 
+        <div class="intro">
+          <h1>Javascript Fundamentals</h1>
+        </div>
+        <div class="blog-preview">
+            <p>Javascript is a core part of computer programming; it gives you wide range of flexibility when creating a web page or app. With Javascript you can achieve a lot of things that are simply not possible with only HTML and CSS. </p>
+            <p>
+            In this blog we'll go over some of the key concepts of this language, how it relates to HTML/CSS and how to use the DOM.</p>
 
+            <h2>What is Javascript? How does it work with HTML and CSS?</h2>
+            <p>You can compare the relationship between Javascript, CSS and HTML to a person.</p>
+            <p>The HTML can provide basic information about the person; their structure. Let's say that they have a head, arms, torso and legs. Technically you wouldn't see any kind of drawing here just with html - it would be all html elements, but for the anaology let's ignore that.</p>
+              <img id="html-man" src="../Images/stick-figure.png" alt="HMTL man">
+            <p>CSS then can make them a bit more interesting. CSS adds their height, width, what colour clothes they're wearing, their hair style and colour. Now we have a person ready to go - but they're not doing a whole lot.</p>
+              <img id="css-man" src="../Images/css-man.png" alt="CSS man">
+            <p>JavaScript is giving the person the ability to change! This can be in so many ways, but here are a few you can try - press the buttons below to trigger an event to change our person.</p>
+              <img id="css-man-change-me" src="../Images/css-man-change-me.png" alt="CSS man">
+              <div class="buttons">
+                <button id="change-clothes" type="button">Change my clothes</button>
+                <button id="headache" type="button">Give me a headache</button>
+                <button id="make-me-hide" type="button">Make me hide</button>
+                <button id="reset-me" type="button">Reset</button>
+              </div>
 
+              <h2>Control flow, conditionals and loops</h2> 
+              <p>Control flow is the way a document is read. The default is top to bottom, however with Javascript we can get more creative and execute different sections of our code when we want.</p>
 
+              <p>This is done by one of two ways:</p>
+                <ul>
+                  <li>Conditional Statments</li>
+                  <ol>
+                    <li>if/else</li>
+                    <li>switch</li>
+                    <li>ternary</li>
+                  </ol>
+                  <li>Loops</li>
+                  <ol>
+                    <li>for loops</li>
+                    <li>do/while loops</li>
+                    <li>... and many more!</li>
+                  </ol>
+                </ul>
+              <p>You can compare control flow, loops and conditional statements to everyday life. For example, the default flow for your life may be:
+                <ul>
+                  <li>Wake up</li>
+                  <li>Eat breakfast</li>
+                  <li>Get changed</li>
+                  <li>Go to work</li>
+                  <li>Go home</li>
+                  <li>Watch Netflix</li>
+                  <li>Go to bed</li>
+                </ul> 
+              <p>However, those list items will not always need to be completed - and this is where if/else conditional statements and for loops comes in.</p>
+              <p>The condition could state that <strong>if</strong> it is a weekday, you should loop through the above activities 5 times. However <strong>if else</strong> it is a weekend, you should loop through a different group of activities 2 times:</p>
+                <ul>
+                  <li>Sleep in</li>
+                  <li>Go out for brunch</li>
+                  <li>Catch up with friends</li>
+                  <li>Go Shopping</li>
+                  <li>Stay up late</li>
+                </ul> 
+              <p>Once that loop is completed, the rest of the code would continue.</p>
+              <p>In general, loops allow you to do repetitive tasks with less code.</p>
+              
+              <h3>I want to make a quick note of the key parts of a loop:</h3>
+                <ul>
+                  <li>This first part is called the <strong>Initializer</strong> - this is declaring a variable. 
+                    <p>Usually it's <span class="code">i</span>, but it can be anything - for example, <span class="code">num</span> instead.</p>
+                    <p>It can be written as <span class="code">let num = 0</span>, but the <span class="code">let</span> is usually removed and <span class="code">i</span> is used instead, so <span class="code">i = 0.</span><br></li>
+                  <li>The second part is called the <strong>Condition</strong> and usually looks something like <span class="code">i > 10.</span> 
+                    <p>The number to the right is the condition that needs to be met - to be recognised as true to continue running the code.</p>
+                    <p>In this example, it's saying "keep running this loop as long as our variable is greater than 10."</p></li>
+                  <li>The third part is called the <strong>Final expression</strong> - <span class="code">i++.</span> 
+                    <p>This says "after each loop, add one." This means in the next loop, the computer will no longer see <span class="code">i = 0</span> but instead <span class="code">i = 1</span>.</p></li>
+                </ul>
+                  <p>  
+                  Here's a <a href="https://www.youtube.com/watch?v=sJZLB0p5QQk">really good video on loops.</a>
+                  </p>
+            
+              <h2>Arrays vs Objects</h2>
+                <p>Objects and Arrays are similar and often used within each other, but they are different in how they store data and how this data is accessed. Having both options and being able to use them together allows us greater flexibility when pulling and storing data.</p>
+                <p>Arrays are lists within two square brackets:</p>
+                <p class="code">let array = [orange, banana, pineapple, apple];</p>
+                <p>They are accessed by calling their number, which starts from 0. For example if you wanted to access "banana" from the array above you would need to call <span class="code">array[1]</span>.</p>
+                Objects are also lists, but they are in pairs of keys and values rather than single comma-delimited values. They are accessed via dot notation, and use curly brackets:
+                <p class="code">let object = {<br>fruit: 'orange', <br>ripeness: 'underipe' <br>delicious: true<br>};</p>
+                <p>To check if the fruit was delicious, you would call <span class="code">object.delicious</span>.</p>
 
+              <h2>What is the DOM and how do you use it?</h2>
+                <p>The DOM stands for document object model and ties HTML, CSS and JavaScript together. It represents your entire document, and you can use it to make dynamic changes to the code.</p>
+                <p>An example of how you could use the DOM to improve your website is to change the text when an event happens. You can create a button in HTML that says "Turn me red!" that on the click, changes (via JavaScript) the page text to red.</p>
+                <p>Here are some common methods/ways to interface with the DOM:</p>
+                  <ul class="code">
+                    <li>document.querySelector(selector)</li>
+                    <li>document.querySelectorAll(name)</li>
+                    <li>element.innerHTML</li>
+                    <li>element.style.left</li>
+                    <li>element.addEventListener()</li>
+                  </ul>
 
-
-
-    </body>
-</html>
+              <h2>Functions - what are they and why do we need them?</h2>
+                <p> Functions are a really important part of JavaScript, as it stops us from writing the same code over and over. You use functions to define what should happen to the code when the function is called, and then re-use that same function later on, rather than re-writing it all.
+                <p>Here is a very simple version of a function. Usually there would be a lot more code in the function itself, but you can see how the rules are set in the function and then the call tells it to run.</p>
+                  <div><img src="../Images/functionexample.png" width= 400 em;></div>
+          </div>
+      </section>
+    </div> 
+  </div>
+</body>  
 <script src="javascript-dom.js"></script>
+</html>
+
+
+    
+  
