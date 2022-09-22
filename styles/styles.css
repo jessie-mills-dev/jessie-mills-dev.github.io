@@ -11,7 +11,7 @@
   font-size: 8px;
   max-width: 100%;
 }
- }
+}
 
 
 
@@ -37,6 +37,9 @@
   .first-flex {
     width: 80%;
   }
+  .navbar {
+    font-size: 10px;
+  }
 }
 
 /* desktop */
@@ -46,17 +49,16 @@
 #sideBar {
   width: 20%;
 }
-
 body {
   width: 100%;
 }
 .first-flex {
   width: 80%;
 }
-
-  
-
-  }
+.navbar {
+  font-size: 10px;
+}
+}
 
   
 /* INDEX PAGE */
@@ -106,13 +108,17 @@ body {
 
 /* Page layout and colours */
 
+
+
 .intro {
   background-color: rgb(255, 255, 255);
   padding: 1em;
   margin-top: 0.5em;
   border-radius: 1.5em;
   text-align: center;
-  box-shadow: 0px 5px 10px 0px rgba(0.5, 0.5, 0.5, 0.5)
+  box-shadow: 0px 5px 10px 0px rgba(0.5, 0.5, 0.5, 0.5);
+  font-size: 14px;
+  font-family: monospace;
 }
 
 .page {

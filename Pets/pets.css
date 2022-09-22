@@ -84,7 +84,7 @@ p {
   border-color: lightgray;
   border-radius: 1em;
   padding: 50px;
-  margin: 25px;
+  margin-top: 10px;
   border-top: solid, 50px;
   padding-bottom: 100px;
 }
