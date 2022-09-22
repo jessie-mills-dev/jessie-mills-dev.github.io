@@ -11,9 +11,7 @@
   font-size: 8px;
   max-width: 100%;
 }
-#sideBar {
-  width: 85%;
-}
+
 
 
   body {
@@ -32,9 +30,6 @@
     font-size: 10px;
   }
 
-  #sideBar {
-    width: 85%;
-  }
 
   body {
     background-color: pink;
