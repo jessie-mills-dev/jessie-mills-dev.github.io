@@ -1,34 +1,31 @@
 
 
-/* mobile 
+/* mobile */
 @media screen and (max-width:320px) {
-  body {
-    background-color: #eaddec;
-  }
-  .navbar {
-    display:none;
-  }
+ #page {
+  flex-direction: column;
+ }
+
+ #navbar {
+  font-size: 8px;
+ }
 }
 
-/* tablet 
-@media screen and (min-width: 321px) {
-  body {
-    background-color:lightgoldenrodyellow;
-   }
-  #mobile {
-    display:none;
-  }
-}*/
 
-/* desktop 
+/* tablet */
+@media screen and (min-width: 321px) {
+  #navbar {
+    font-size: 14px;
+   }
+
+  }
+
+
+/* desktop */
 @media screen and (min-width: 1200px) {
-  body {
-    background-color: #d6f0df;
+ 
   }
-  #mobile {
-    display:none;
-  }
-}*/
+
 
 /* INDEX PAGE */
 
