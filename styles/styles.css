@@ -11,9 +11,6 @@
   font-size: 8px;
  }
 
- #sidebar {
-  width: 100%;
- }
 }
 
 
@@ -25,20 +22,13 @@
    .page {
     flex-direction: column;
    }
-
-   #sidebar {
-    width: width;
-   }
-
   }
 
 
 /* desktop */
 @media screen and (min-width: 1200px) {
  
-  #sidebar {
-    width: 15%;
-   }
+
   }
 
   
