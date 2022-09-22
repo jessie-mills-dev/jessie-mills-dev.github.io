@@ -10,7 +10,11 @@
  .navbar {
   font-size: 8px;
   max-width: 100%;
- }
+}
+#sideBar {
+  width: 85%;
+}
+
 
   body {
     background-color: purple;
@@ -20,13 +24,16 @@
 
 
 /* tablet */
-@media screen and (min-width: 321px) and (max-width: 1199) {
+@media screen and (min-width: 321px) and (max-width: 1199px) {
   .page {
     flex-direction: column;
   }
   .navbar {
     font-size: 10px;
-    max-width: 100%;
+  }
+
+  #sideBar {
+    width: 85%;
   }
 
   body {
@@ -42,6 +49,12 @@
   body {
     background-color: black;
   }
+
+#sideBar {
+  width: 15%;
+}
+  
+
   }
 
   
@@ -76,7 +89,6 @@
 /* Sidebar */
 
 #sideBar {
-  width: 15%;
   background: rgb(255, 255, 255);
   margin: 20px;
   padding: 20px;
