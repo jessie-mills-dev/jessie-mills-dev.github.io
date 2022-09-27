@@ -1,0 +1,52 @@
+/* Game board and text not responsive yet*/
+
+body {
+  background-image: url("./images/pretty.jpg");
+  background-color: turquoise;
+  height: auto;
+  background-size: cover;
+  font-family: 'Merienda', cursive;
+  text-align: center;
+  margin-top: 40px;
+  }
+
+table {
+    margin-right: center;
+    margin-left: center;
+    margin: 0 auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: lightgray;
+  }
+  
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 6vw;
+    color: lightgray;
+  }
+  
+td {
+    width: 8vw;
+    height: 8vw;
+    text-align: center;
+    font-size: 300%;
+    border: rgb(123, 119, 119) dotted 1px;
+    color: black;
+  }
+
+h2 {
+  text-align: center;
+  font-size: 3vw;
+  color: lightgray;
+}  
+
+#resetButton {
+  display:block;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Merienda', cursive;
+}
