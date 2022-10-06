@@ -50,3 +50,11 @@ h2 {
   margin-right: auto;
   font-family: 'Merienda', cursive;
 }
+
+#home {
+  display:block;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Merienda', cursive;
+}
