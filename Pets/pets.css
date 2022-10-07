@@ -3,14 +3,18 @@
 /* mobile */
 @media screen and (max-width:320px) {
   body {
-    background-color: #eaddec;
+    background-color: rgb(10, 80, 37);
+    padding-top: 90px;
+    font-family: 'Rubik', sans-serif;
   }
 }
 
 /* tablet */
 @media screen and (min-width: 321px) {
   body {
-    background-color:lightgoldenrodyellow;
+    background-color: rgb(10, 80, 37);
+    padding-top: 85px;
+    font-family: 'Rubik', sans-serif;
    
   }
 }
@@ -18,7 +22,9 @@
 /* desktop */
 @media screen and (min-width: 1200px) {
   body {
-    background-color: #d6f0df;
+    background-color: rgb(10, 80, 37);
+    padding-top: 50px;
+    font-family: 'Rubik', sans-serif;
   }
 }
   
@@ -27,54 +33,66 @@
   text-align: center;
 }
 
-/*Nav bar*/
+/* Navbar */
+
 .navbar {
-  background-color: rgb(255, 255, 255);
-  overflow: hidden;
-  border: solid;
-  border-color: lightgray;
-  border-radius: 1em;
+  overflow: visible;
+  background-color: white;
+  display: block;
+  position: fixed;
+  top: 0px;
+  width: 99%;
+  box-shadow: 0px 5px 10px 0px rgba(0.5, 0.5, 0.5, 0.5);
 }
 
 .navbar a {
   float: left;
-  color: black;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
-  font-family: 'Exo', sans-serif;
-  font-weight: 800;
+  
 }
 
-.navbar ul {
-  list-style: none;
+.links {
+  font-size: 1.7em; 
+  font-family: 'Rubik', sans-serif;
+}
+
+
+.dropdown {
+  position: relative;
+  font-size: 18px;
+  float: left;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.navbar ul li {
-  display: inline-block;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
 }
 
-.navbar a:hover {
-  background-color: #d8ebf1;
-  color: black;
-}
-
-.navbar a.active {
-  background-color: #a8def1;
-  color: black;
-
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 h1 {
   text-align: left;
-  font-family: 'Exo', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 500;
 }
 
 p {
-  font-family: 'Exo', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 350;
 }
 
@@ -85,23 +103,33 @@ p {
   border-radius: 1em;
   padding: 50px;
   margin-top: 10px;
+  margin-bottom: 18px;
   border-top: solid, 50px;
   padding-bottom: 100px;
+  font-family: 'Rubik', sans-serif;
+  font-size: large;
+}
+
+.intropets {
+  background: rgb(255, 255, 255);
+  text-align: center;
+  border: solid;
+  border-color: lightgray;
+  border-radius: 1em;
+  padding: 10px;
+  margin-top: 10px;
+  border-top: solid, 10px;
+  margin-bottom: 18px;
+  font-family: monospace;
 }
 
 li {
-  font-family: 'Exo', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 350;
 }
 
 .bioimg  {
   float: left;   
   margin-right: 40px;
-  
   }
-
-
-.intro {
-  text-align: center;
-}
 
