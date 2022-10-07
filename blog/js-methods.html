@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <script  src="methods.js" type="text/javascript"></script>
+    <!-- favicon -->
+    <link rel="icon" href="../Images/pawprint.png" type="image/icon type">
+    <title>Home page</title>
+    </head>
+    
+    <body>
+      <div class="navbar">
+        <a style="padding:6px 5px 5px 10px; width: 3em;"  href="../index.html">
+          <img src="../Images/home.png" width="100%">
+        </a>
+        <a class="links" href="tech-blogs.html">TECH</a>
+        <a class="links" href="core-blogs.html">CORE</a>
+        <a class="links" href="about-me.html">ABOUT</a>
+        <a class="links" href="../Pets/pets.html">PETS</a>
+        <a class="links" href="../tictactoe/index.html">TIC-TAC-TOE</a>
+        <a class="links" href="../dress-the-clown/dress-the-clown.html">DRESS UP</a>
+        <a class="links" href="js-methods.html">METHODS</a>
+        <a class="links" href="js-events.html">EVENTS</a>
+        
+    </div>
+
+    <div class="page">
+      <div id="sideBar">
+        <div>
+          <img class="selfie" src="../Images/selfie.jpg">
+          </div>
+          <div>
+            <p>▲▼▲▼▲▼▲▼▲▼▲
+          </p>
+            <p>Kia ora, I'm Jessie! I'm excited to be part of the Aihe intake for Dev Academy in 2022.</p>
+            <p> I'm based in Christchurch and live with three cats, two bunnies and one husband!</p> 
+            <p>You can read more about me and my learning journey in my blog posts and the About page. </p>
+            <p>▲▼▲▼▲▼▲▼▲▼▲
+            </p>
+          </div>
+        </div>
+          <div class = "first-flex">
+            <section> 
+              <div class="intro">
+              <h1>◄► JavaScript Methods ◄►</h1>
+              </div>
+              <div class="blog-preview">
+                <p>
+                  <div>
+                    <p>
+                      I struggle to remember and use a variety of JS methods, which makes coding harder at times. I want to get more familiar with these methods, so I've put together this page that explains all of the main ones.
+                    </p>
+
+                    <table>
+                      <tr>
+                        <th>Method</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                        <th>Links</th>
+                      </tr>
+                      <tr>
+                        <td>shift()</td>
+                        <td>shift() removes the first element from an array and returns that element. If you then log the array it will show the <i>first</i> element is now removed.</td>
+                        <td><img src="../Images/shift().png" width="350px" ></td>
+                        <td><a href="https://www.w3schools.com/jsref/jsref_shift.asp">Learn More</td>
+                      </tr>
+                      <tr class="alternate">
+                        <td>pop()</td>
+                        <td>pop() removes the last element from the end of an array and returns that element. If you then log the array it will show the <i>last</i> element is now removed.</td>
+                        <td><img src="../Images/pop().png" width="350px"></td>
+                        <td><a href="https://www.w3schools.com/jsref/jsref_join.asp">Learn More</td>
+                      </tr>
+                      <tr >
+                        <td>join()</td>
+                        <td>join() returns a new string by concatenating (adding) all of the array's elements that are separated by a specified seperator.</td>
+                        <td><img src="../Images/join().png" width="350px"></td>
+                        <td><a href="https://www.w3schools.com/jsref/jsref_join.asp">Learn More</td>
+                      </tr>
+                      <tr class="alternate">
+                        <td>sort()</td>
+                        <td>sort() is used to arrange/sort an array's elements in either ascending or descending order.</td>
+                        <td><img src="../Images/sort().png" width="350px"></td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#:~:text=The%20sort()%20method%20sorts,UTF%2D16%20code%20units%20values.">Learn More</td>
+                      </tr>
+                      <tr>
+                        <td>find()</td>
+                        <td>find() returns the value of the first element in an array that passes the test in a testing function.</td>
+                        <td><img src="../Images/find().png" width="350px"></td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find">Learn More</td>
+                      </tr>
+                      <tr class="alternate">
+                        <td>reduce()</td>
+                        <td>reduce() renders a single value from an array with multiple elements, by a "reducer" callback function. The reducer walks through the array element-by-element, at each step adding the current array value to the result from the previous step — until there are no more elements to add. </td>
+                        <td><img src="../Images/reduce().png" width="350px"></td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce">Learn more</a></td>
+                      </tr>
+                      <tr>
+                        <td>slice()</td>
+                        <td>slice() returns a new array with the specified start to end elements. The start element is included in the new array, but not the end element.</td>
+                        <td><img src="../Images/slice().png" width="350px"></td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice">Learn More</td>
+                      </tr>
+                      <tr class="alternate">
+                        <td>includes()</td>
+                        <td>includes() checks if an array includes the element that passes the condition. Returns true or false.</td>
+                        <td><img src="../Images/includes().png" width="350px"></td>
+                        <td><a href="https://www.w3schools.com/jsref/jsref_includes_array.asp">Learn More</td>
+                      </tr>
+                      <tr>
+                        <td>some()</td>
+                        <td>some() checks if <i>at least one</i> element in the array passes the condition, returning true or false.</td>
+                        <td><img src="../Images/some().png" width="350px"></td>
+                        <td><a href="https://www.w3schools.com/jsref/jsref_some.asp">Learn More</td>
+                      </tr>
+                      <tr class="alternate">
+                        <td>unshift()</td>
+                        <td>unshift() adds one or more elements to the beginning of an array and returns the new length of the array.</td>
+                        <td><img src="../Images/unshift().png" width="350px"></td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift">Learn More</td>
+                      </tr>
+                      <tr>
+                        <td>concat()</td>
+                        <td>concat() merges two or more arrays and returns a new array, without changing the existing arrays.</td>
+                        <td><img src="../Images/concat().png" width="350px"></td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat">Learn More</td>
+                      </tr>
+                      <tr class="alternate">
+                        <td>every()</td>
+                        <td>every() checks <i>every</i> element in the array that passes the condition. Returns true or false.</td>
+                        <td><img src="../Images/every().png" width="350px"></td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every">Learn More</td>
+                      </tr>
+                      <tr>
+                        <td>forEach()</td>
+                        <td>forEach() helps to loop over arrays by executing a provided callback function for each element in an array. Can be an alternative to for loops.</td>
+                        <td><img src="../Images/forEach().png" width="350px"></td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach">Learn More</td>
+                      </tr>
+                      <tr class="alternate">
+                        <td>findIndex()</td>
+                        <td>findIndex() returns the index of the first element in an array that passes the test in a testing function.</td>
+                        <td><img src="../Images/findIndex().png" width="350px"></td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex">Learn More</td>
+                      </tr>
+                      <tr>
+                        <td>indexOf()</td>
+                        <td>indexOf() returns the index of the first occurance of the specified element in the array, or -1 if not found.</td>
+                        <td><img src="../Images/indexOf().png" width="350px"></td>
+                        <td><a href="https://www.w3schools.com/jsref/jsref_indexof.asp">Learn More</td>
+                      </tr>
+                      <tr class="alternate">
+                        <td>push()</td>
+                        <td>push() adds one or more elements to the end of an array and returns the new length of the array.</td>
+                        <td><img src="../Images/push().png" width="350px"></td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push">Learn More</td>
+                      </tr>
+                      <tr>
+                        <td>map()</td>
+                        <td>map() creates a new array with the results of calling a provided function on every element in the array.</td>
+                        <td><img src="../Images/map().png" width="350px"></td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Learn More</td>
+                      </tr>
+                      <tr class="alternate">
+                        <td>reverse()</td>
+                        <td>reverse() reverses an array in place. The element at the last index will be the first and visa versa.</td>
+                        <td><img src="../Images/reverse().png" width="350px"></td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse">Learn More</td>
+                      </tr>
+                      <tr>
+                        <td>filter()</td>
+                        <td>filter() creates a new array with only elements that pass the condition inside the provided function.</td>
+                        <td><img src="../Images/filter().png" width="350px"></td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">Learn More</td>
+                      </tr>
+                      <tr class="alternate">
+                        <td>fill()</td>
+                        <td>fill() fills the elements in an array with a static value and then returns the modified array.</td>
+                        <td><img src="../Images/fill().png" width="350px"></td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill">Learn More</td>
+                      </tr>
+                      
+                    </table>
+                  
+                </div>
+    </div>
+  </body>  
+  
+</html>

@@ -219,3 +219,21 @@ body {
 #learning1{
   margin-top: 30px;
 }
+
+/* Methods and Events pages */
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 7px;
+}
+
+th {
+  background-color: lightgoldenrodyellow;
+}
+
+.alternate {
+  background-color: rgb(238, 238, 238);
+}
