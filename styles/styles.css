@@ -66,27 +66,53 @@ body {
 /* Navbar */
 
 .navbar {
-  overflow: hidden;
+  overflow: visible;
   background-color: white;
   display: block;
-  position: sticky;
+  position: fixed;
   top: 0px;
-  width: 100%;
-  box-shadow: 0px 5px 10px 0px rgba(0.5, 0.5, 0.5, 0.5)
+  width: 99%;
+  box-shadow: 0px 5px 10px 0px rgba(0.5, 0.5, 0.5, 0.5);
 }
 
 .navbar a {
   float: left;
-  display: block;
-  color: black;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
   text-align: center;
-  padding: 14px;
+  padding: 14px 16px;
   text-decoration: none;
+  
 }
 
 .links {
   font-size: 1.7em; 
   font-family: 'Rubik', sans-serif;
+}
+
+
+.dropdown {
+  position: relative;
+  font-size: 18px;
+  float: left;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Sidebar */
@@ -128,6 +154,7 @@ body {
 }
 
 body {
+  padding-top: 50px;
   font-family: 'Rubik', sans-serif;
   font-size: 15px;
   font-weight: 300px;
@@ -237,3 +264,4 @@ th {
 .alternate {
   background-color: rgb(238, 238, 238);
 }
+
